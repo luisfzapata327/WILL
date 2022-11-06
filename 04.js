@@ -11,9 +11,14 @@ function numeroSimetrico(num) {
   // Un número es simétrico cuando es igual a su reverso.
   // Ej:
   // numeroSimetrico(11711) devuelve true
-
+  
   // Tu código:
-
+  let numeroReves = num.toString().split("").reverse("").join("");
+  if (num === parseInt(numeroReves)) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 // No modifiques nada debajo de esta linea //
